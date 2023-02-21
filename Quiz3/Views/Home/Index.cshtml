@@ -1,0 +1,13 @@
+﻿@{
+    FullNameService fullNameService = new FullNameService();
+}
+
+@using Quiz3.Models.Services;
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">FullName: </h1>
+    <h3>@fullNameService.PrintFullName()</h3>
+</div>
